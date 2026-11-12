@@ -1,0 +1,5 @@
+Contact: mailto:ahmed.em.nasr@gmail.com
+Contact: https://www.linkedin.com/in/ahmed-emad-nasr/
+Expires: 2027-11-12T00:00:00.000Z
+Preferred-Languages: en, ar
+Canonical: https://ahmed-emad-nasr.github.io/.well-known/security.txt
