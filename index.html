@@ -1,17 +1,136 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ahmed Emad Nasr | Information Security Officer</title>
-<meta name="description" content="The portfolio of Ahmed Emad Nasr, information security officer — moved to /ahmed.dev/.">
-<link rel="canonical" href="https://ahmed-emad-nasr.github.io/ahmed.dev/">
-<meta name="robots" content="noindex, follow">
-<meta http-equiv="refresh" content="0; url=https://ahmed-emad-nasr.github.io/ahmed.dev/">
-<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#080808;color:#f7f5f0;font:16px system-ui,sans-serif}a{color:#e8304f}</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ahmed Emad Nasr — Information Security Officer</title>
+  <meta name="description" content="Ahmed Emad Nasr, information security officer and cybersecurity instructor in Egypt: GRC, SOC, incident response & DFIR, malware analysis, IAM — portfolio, blog of 82 case studies, teaching and certificates.">
+  <meta name="author" content="Ahmed Emad Nasr">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ahmed-emad-nasr.github.io/">
+  <link rel="icon" href="/ahmed.dev/favicon.ico">
+  <meta property="og:site_name" content="Ahmed Emad Nasr">
+  <meta property="og:title" content="Ahmed Emad Nasr — Information Security Officer">
+  <meta property="og:description" content="Portfolio, security blog, teaching and certificates of Ahmed Emad Nasr.">
+  <meta property="og:url" content="https://ahmed-emad-nasr.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://ahmed-emad-nasr.github.io/ahmed.dev/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@0x3omda">
+  <meta name="theme-color" content="#080808">
+  <!--
+    WHY THIS PAGE EXISTS
+    The site name Google shows above every result ("Ahmed Emad Nasr" instead
+    of "GitHub Pages documentation") is read ONLY from the home page at the
+    root of the domain — this file. Google does not read site names from a
+    sub-folder like /ahmed.dev. So this must stay a real, indexable page
+    (no redirect, no noindex), and "name" below must stay equal to the
+    WebSite name in the portfolio (app/layout.tsx).
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://ahmed-emad-nasr.github.io/#website",
+        "name": "Ahmed Emad Nasr",
+        "alternateName": ["3omda", "0x3omda", "Ahmed Emad", "ahmed.dev"],
+        "url": "https://ahmed-emad-nasr.github.io/",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://ahmed-emad-nasr.github.io/ahmed.dev/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://ahmed-emad-nasr.github.io/ahmed.dev/#person",
+        "name": "Ahmed Emad Nasr",
+        "alternateName": ["3omda", "0x3omda"],
+        "jobTitle": "Information Security Officer",
+        "url": "https://ahmed-emad-nasr.github.io/ahmed.dev/",
+        "sameAs": [
+          "https://www.linkedin.com/in/ahmed-emad-nasr/",
+          "https://github.com/Ahmed-Emad-Nasr",
+          "https://www.youtube.com/@AhmedEmad-0x3omda",
+          "https://tryhackme.com/p/Ahmed.Emad.Nasr",
+          "https://cyberdefenders.org/p/ahmed.em.nasr"
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root { color-scheme: dark; --red: #bc002d; --red-ink: #ff4d6d; --blue: #38bdf8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #080808; color: #ececec;
+           font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+           background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.06) 1px, transparent 0); background-size: 40px 40px; }
+    body::before { content: ""; position: fixed; inset: 0 0 auto; height: 4px; background: var(--red); }
+    main { width: 100%; max-width: 46rem; padding: 4rem 1.5rem; }
+    .kicker { margin: 0 0 1rem; display: flex; align-items: center; gap: .75rem; color: var(--red-ink);
+              font: 700 .75rem/1 ui-monospace, "Cascadia Mono", Consolas, monospace; letter-spacing: .25em; text-transform: uppercase; }
+    .kicker::before { content: ""; width: 2.5rem; height: 1px; background: var(--red); }
+    h1 { margin: 0 0 1.25rem; font-size: clamp(2.4rem, 8vw, 4.25rem); font-weight: 900; line-height: .95; letter-spacing: -.03em; text-transform: uppercase; }
+    h1 span { color: var(--red-ink); }
+    p { margin: 0; color: #b8b8b8; }
+    .lede { font-size: 1.0625rem; max-width: 38rem; }
+    .stats { margin: 1.75rem 0 0; display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; list-style: none; }
+    .stats li { padding: .35rem .7rem; border: 1px solid rgba(56,189,248,.35); background: rgba(56,189,248,.07); color: #9adffb;
+                font: 700 .8125rem/1.4 ui-monospace, Consolas, monospace; }
+    nav ul { list-style: none; padding: 0; margin: 2.25rem 0 0; display: grid; gap: .75rem; }
+    @media (min-width: 40rem) { nav ul { grid-template-columns: 1fr 1fr; } }
+    nav a { display: block; height: 100%; padding: .9rem 1.1rem; color: #ececec; text-decoration: none;
+            border: 1px solid rgba(255,255,255,.08); border-inline-start: 2px solid var(--red); background: rgba(255,255,255,.03);
+            transition: background .18s, border-color .18s; }
+    nav a:hover { background: rgba(188,0,45,.14); border-color: rgba(188,0,45,.5); }
+    nav a:focus-visible, .social a:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+    nav a strong { display: block; font-size: 1.0625rem; }
+    nav a span { display: block; color: #9a9a9a; font-size: .875rem; }
+    nav li:first-child { grid-column: 1 / -1; }
+    nav a.main { background: var(--red); border-color: var(--red); }
+    nav a.main span { color: #ffd9e0; }
+    nav a.main:hover { background: #9e0026; }
+    .social { margin: 2rem 0 0; display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; padding: 0; list-style: none;
+              font: .8125rem/1.6 ui-monospace, Consolas, monospace; text-transform: uppercase; letter-spacing: .15em; }
+    .social a { color: #a8a8a8; text-decoration: none; display: inline-block; min-height: 1.5rem; }
+    .social a:hover { color: #fff; }
+    footer { margin-top: 2.5rem; color: #8a8a8a; font-size: .8125rem; }
+    @media (prefers-reduced-motion: reduce) { nav a { transition: none; } }
+  </style>
 </head>
 <body>
-<p>Redirecting to <a href="https://ahmed-emad-nasr.github.io/ahmed.dev/">ahmed-emad-nasr.github.io/ahmed.dev</a>…</p>
-<script>location.replace("https://ahmed-emad-nasr.github.io/ahmed.dev/" + location.hash);</script>
+  <main>
+    <p class="kicker">Information Security Officer</p>
+    <h1>Ahmed Emad <span>Nasr</span></h1>
+    <p class="lede">Information security officer and cybersecurity instructor in Egypt — GRC &amp; compliance, SOC operations, incident response &amp; DFIR, malware analysis, IAM and data security. Teaching at AMIT Learning and the National Telecommunication Institute (NTI).</p>
+
+    <ul class="stats" aria-label="In numbers">
+      <li>82 case studies</li>
+      <li>160-hour SOC diploma</li>
+      <li>300+ students</li>
+      <li>60K+ YouTube views</li>
+    </ul>
+
+    <nav aria-label="Ahmed Emad Nasr's site">
+      <ul>
+        <li><a class="main" href="/ahmed.dev/"><strong>Open the portfolio →</strong><span>Projects, experience, skills and contact</span></a></li>
+        <li><a href="/ahmed.dev/blog"><strong>Blog</strong><span>82 security case studies, MITRE ATT&amp;CK, detection rules</span></a></li>
+        <li><a href="/ahmed.dev/teaching"><strong>Teaching</strong><span>The SOC &amp; Cybersecurity Diploma and student feedback</span></a></li>
+        <li><a href="/ahmed.dev/gallery"><strong>Certificates</strong><span>Degree, certifications, courses and photos</span></a></li>
+        <li><a href="/ahmed.dev/ar/teaching" hreflang="ar" lang="ar" dir="rtl"><strong>التدريس بالعربي</strong><span>دبلومة SOC والأمن السيبراني وآراء الطلاب</span></a></li>
+      </ul>
+    </nav>
+
+    <ul class="social" aria-label="Profiles">
+      <li><a href="https://www.linkedin.com/in/ahmed-emad-nasr/" rel="me">LinkedIn</a></li>
+      <li><a href="https://github.com/Ahmed-Emad-Nasr" rel="me">GitHub</a></li>
+      <li><a href="https://www.youtube.com/@AhmedEmad-0x3omda" rel="me">YouTube</a></li>
+      <li><a href="https://tryhackme.com/p/Ahmed.Emad.Nasr" rel="me">TryHackMe</a></li>
+      <li><a href="mailto:ahmed.em.nasr@gmail.com">Email</a></li>
+    </ul>
+
+    <footer>© Ahmed Emad Nasr · <a href="/.well-known/security.txt" style="color:inherit">security.txt</a></footer>
+  </main>
 </body>
 </html>
