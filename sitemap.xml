@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sitemap index for the github.io host: the portfolio's full sitemap
+     (every page, video and image) lives inside /ahmed.dev/. -->
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://ahmed-emad-nasr.github.io/ahmed.dev/sitemap.xml</loc>
+  </sitemap>
+</sitemapindex>

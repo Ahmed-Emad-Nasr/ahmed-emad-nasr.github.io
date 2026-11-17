@@ -1,4 +1,7 @@
+# Robots for the whole github.io host. Google reads only this file (at the
+# host root), never the one inside /ahmed.dev/, so the sitemaps are listed here.
 User-agent: *
 Allow: /
 
+Sitemap: https://ahmed-emad-nasr.github.io/sitemap.xml
 Sitemap: https://ahmed-emad-nasr.github.io/ahmed.dev/sitemap.xml
