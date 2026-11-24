@@ -3,6 +3,9 @@
      (every page, video and image) lives inside /ahmed.dev/. -->
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
+    <loc>https://ahmed-emad-nasr.github.io/sitemap-root.xml</loc>
+  </sitemap>
+  <sitemap>
     <loc>https://ahmed-emad-nasr.github.io/ahmed.dev/sitemap.xml</loc>
   </sitemap>
 </sitemapindex>
